@@ -43,6 +43,32 @@ public class MyMain {
 		Calc calc = new Calc();
 		System.out.println(calc.render(9, 8));
 		*/
+		
+		// ~~~~~~~~~~ Towers of Hanoi ~~~~~~~~~~~
+		/*
+			TowersOfHanoi toh = new TowersOfHanoi();
+			toh.printPoles(10, 0, 0);
+			for(int i = 0; i < 10; i++) {
+				try {
+					toh.printPoles(10-i, 0, i);
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			toh.printPoles(0, 1, 9);
+			
+			for(int i = 0; i < 10; i++) {
+				try {
+					toh.printPoles(0, 1+i, 9-i);
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		*/
 	}
 
 }
